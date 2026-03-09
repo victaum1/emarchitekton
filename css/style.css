@@ -159,3 +159,7 @@
 .footer_item > ul > li {
     list-style-type: none;
 }
+
+a:visited {
+    color: gray;
+}
