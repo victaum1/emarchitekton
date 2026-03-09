@@ -5,26 +5,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>EM Architekton S.A.S. | Arquitectura y planeación</title>
         <link href="css/style.css" rel="stylesheet" />
+        <link rel="icon" href="imgs/favico.svg" />
     </head>
-    <body>
-        <div class="container">
+    <body
+        style="
+            color: white;
+            background-color: black;
+            background-image: url(./imgs/world-dark.svg);
+        "
+    >
+        <div class="container" id="main_container">
             <header class="site_header">
                 <div class="logo">
-                    <img src="./imgs/logo-dark.png" />
+                    <img class="logo_img" src="./imgs/logo-dark.png" />
                 </div>
-                <div class="menu" id="menu_x" style="display: none">
-                    <button>
-                        <img src="./imgs/close.svg" />
-                    </button>
-                </div>
-                <div class="menu" id="menu_ham">
-                    <button>
-                        <img src="./imgs/menu.svg" />
-                    </button>
+                <div class="header_item">
+                    <div class="menu" id="btn_bright">
+                        <button>
+                            <img src="./imgs/bright-mode.svg" />
+                        </button>
+                    </div>
+                    <div class="menu" id="btn_dark" style="display: none">
+                        <button>
+                            <img src="./imgs/dark-mode.svg" />
+                        </button>
+                    </div>
+                    <div class="menu" id="menu_x" style="display: none">
+                        <button>
+                            <img src="./imgs/close.svg" />
+                        </button>
+                    </div>
+                    <div class="menu" id="menu_ham">
+                        <button>
+                            <img src="./imgs/menu.svg" />
+                        </button>
+                    </div>
                 </div>
             </header>
-            <section style="display: none" id="nav_ls">
-                <nav class="menu">
+            <aside style="display: none" id="nav_ls">
+                <nav class="nav_bar">
                     <ul>
                         <li>Inicio</li>
                         <li>Acerca de Nosotros</li>
@@ -33,26 +52,29 @@
                         <li>Contacto</li>
                     </ul>
                 </nav>
-            </section>
-            <section>
-                <h1>EM ARCHITEKTON S.A.S.</h1>
-                <img
-                    width="600"
-                    height="313"
-		  src="./imgs/pexels-photo.jpg"/>
-                <p>
-                    EM Architekton S.A.S. es un estudio de arquitectura,
-                    planeación fundado por el arquitecto Eddien Manotas
-                    Villafañe. Su compromiso y dedicación, es el de crear
-                    bienestar con espacios funcionales, que le brinden
-                    satisfacción al cliente.
-                </p>
-                <hr />
-            </section>
+            </aside>
+            <div class="container">
+                <article>
+                    <h1>EM ARCHITEKTON S.A.S.</h1>
+                    <img
+                        width="600"
+                        height="313"
+                        src="./imgs/pexels-photo.jpg"
+                    />
+                    <p>
+                        EM Architekton S.A.S. es un estudio de arquitectura,
+                        planeación fundado por el arquitecto Eddien Manotas
+                        Villafañe. Su compromiso y dedicación, es el de crear
+                        bienestar con espacios funcionales, que le brinden
+                        satisfacción al cliente.
+                    </p>
+                    <hr />
+                </article>
+            </div>
             <footer>
-                <div class="footer_bar">
+                <div class="footer_item">
                     <figure>
-                        <img src="./imgs/logo-dark.png" />
+                        <img class="logo_img" src="./imgs/logo-dark.png" />
                         <figcaption>
                             <sub>Arquitectura</sub>
                             <sub>& planeación</sub>
@@ -61,28 +83,21 @@
                     <aside>
                         <ul>
                             <li>arq.eddiemanotas@outlook.com</li>
-                            <li>319 733 9363</li>
+                            <li>cel: 319 733 9363</li>
                             <li>Barraquilla, Colombia</li>
                         </ul>
                     </aside>
-                    <aside>
-                        <nav class="menu">
-                            <ul>
-                                <li>Inicio</li>
-                                <li>Acerca de Nosotros</li>
-                                <li>Servicios</li>
-                                <li>Portafolio</li>
-                                <li>Contacto</li>
-                            </ul>
-                        </nav>
-                    </aside>
+                    <div class="footer_item">
+                        <ul>
+                            <li>Inicio</li>
+                            <li>Acerca de Nosotros</li>
+                            <li>Servicios</li>
+                            <li>Portafolio</li>
+                            <li>Contacto</li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <p>
-                        Copyright © 2026 EM Architekton | Powered by EM
-                        Architekton
-                    </p>
-                </div>
+                <p>Copyright © 2026 EM Architekton | Powered by CloudFlare</p>
             </footer>
         </div>
         <script src="./js/init_setup.js"></script>
