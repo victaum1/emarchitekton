@@ -7,7 +7,9 @@
         <title>EM Architekton S.A.S. | Arquitectura y planeación</title>
         <link href="css/style.css" rel="stylesheet" />
         <link rel="icon" href="imgs/favico.svg" />
-        <script src="./js/init_setup.js" defer></script>
+        <script src="js/waitForElem.js"></script>
+        <script src="js/init_setup.js" defer></script>
+        <script src="js/html_include.js" defer></script>
     </head>
     <body
         style="
@@ -17,33 +19,7 @@
         "
     >
         <div class="container" id="main_container">
-            <header class="site_header">
-                <div class="logo">
-                    <img class="logo_img" src="./imgs/logo-dark.png" />
-                </div>
-                <div class="header_item">
-                    <div class="menu" id="btn_bright">
-                        <button>
-                            <img src="./imgs/bright-mode.svg" />
-                        </button>
-                    </div>
-                    <div class="menu" id="btn_dark" style="display: none">
-                        <button>
-                            <img src="./imgs/dark-mode.svg" />
-                        </button>
-                    </div>
-                    <div class="menu" id="menu_x" style="display: none">
-                        <button>
-                            <img src="./imgs/close.svg" />
-                        </button>
-                    </div>
-                    <div class="menu" id="menu_ham">
-                        <button>
-                            <img src="./imgs/menu.svg" />
-                        </button>
-                    </div>
-                </div>
-            </header>
+            <include src="header.html"></include>
             <aside style="display: none" id="nav_ls">
                 <nav class="nav_bar">
                     <ul>
@@ -52,56 +28,24 @@
                             <a href="./acerca_de.html">Acerca de Nosotros</a>
                         </li>
                         <li><a href="./servicios.html">Servicios</a></li>
-                        <li><a href="./portafolio.html">Portafolio</a></li>
                         <li><a href="./contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
             </aside>
             <div class="container">
-        <h1>Acerca de Nosotros</h1>
+                <h1>Acerca de Nosotros</h1>
                 <article>
                     <h3>Misión</h3>
                     <p>
-            El objeto social principal de la sociedad consiste en la elaboración, ejecución y consultoría de
-            proyectos de construcción, obras civiles y arquitectura. Está facultada para la promoción inmobiliaria,
-            la compraventa, arrendamiento y administración de bienes raíces, así como para realizar inversiones,
-            fideicomisos y participar en sociedades con fines afines. Su capacidad legal le permite desarrollar cualquier actividad económica lícita, conexa o complementaria, en Colombia y el exterior.
+                        Nuestra misión es elaborar, ejecutar o asesorar tus
+                        proyectos de construcción, obras civiles y de
+                        arquitectura. También promocionamos la compra y venta,
+                        del arrendamiento, y la administración de bienes raices.
                     </p>
                     <hr />
                 </article>
             </div>
-            <footer>
-                <div class="footer_item">
-                    <figure>
-                        <img class="logo_img" src="./imgs/logo-dark.png" />
-                        <figcaption>
-                            <sub>Arquitectura</sub>
-                            <sub>& planeación</sub>
-                        </figcaption>
-                    </figure>
-                    <aside>
-                        <ul>
-                            <li>arq.eddiemanotas@outlook.com</li>
-                            <li>cel: 319 733 9363</li>
-                            <li>Barraquilla, Colombia</li>
-                        </ul>
-                    </aside>
-                    <div class="footer_item">
-                        <ul>
-                            <li><a href="./index.html">Inicio</a></li>
-                            <li>
-                                <a href="./acerca_de.html"
-                                    >Acerca de Nosotros</a
-                                >
-                            </li>
-                            <li><a href="./servicios.html">Servicios</a></li>
-                            <li><a href="./portafolio.html">Portafolio</a></li>
-                            <li><a href="./contacto.html">Contacto</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <p>Copyright © 2026 EM Architekton | Powered by CloudFlare</p>
-            </footer>
+            <include src="footer.html"></include>
         </div>
     </body>
 </html>

@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -6,6 +7,9 @@
         <title>EM Architekton S.A.S. | Arquitectura y planeación</title>
         <link href="css/style.css" rel="stylesheet" />
         <link rel="icon" href="imgs/favico.svg" />
+        <script src="js/waitForElem.js"></script>
+        <script src="js/init_setup.js" defer></script>
+        <script src="js/html_include.js" defer></script>
     </head>
     <body
         style="
@@ -15,33 +19,7 @@
         "
     >
         <div class="container" id="main_container">
-            <header class="site_header">
-                <div class="logo">
-                    <img class="logo_img" src="./imgs/logo-dark.png" />
-                </div>
-                <div class="header_item">
-                    <div class="menu" id="btn_bright">
-                        <button>
-                            <img src="./imgs/bright-mode.svg" />
-                        </button>
-                    </div>
-                    <div class="menu" id="btn_dark" style="display: none">
-                        <button>
-                            <img src="./imgs/dark-mode.svg" />
-                        </button>
-                    </div>
-                    <div class="menu" id="menu_x" style="display: none">
-                        <button>
-                            <img src="./imgs/close.svg" />
-                        </button>
-                    </div>
-                    <div class="menu" id="menu_ham">
-                        <button>
-                            <img src="./imgs/menu.svg" />
-                        </button>
-                    </div>
-                </div>
-            </header>
+            <include src="header.html"></include>
             <aside style="display: none" id="nav_ls">
                 <nav class="nav_bar">
                     <ul>
@@ -50,76 +28,19 @@
                             <a href="./acerca_de.html">Acerca de Nosotros</a>
                         </li>
                         <li><a href="./servicios.html">Servicios</a></li>
-                        <li><a href="./portafolio.html">Portafolio</a></li>
                         <li><a href="./contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
             </aside>
             <div class="container">
                 <h2>Contacto</h2>
-        <ul>
-          <li>
-            <p>
-            <div class="logo">
-            <img src="./imgs/wa.me.webp">
+                <ul>
+                    <li>arq.eddiemanotas@outlook.com</li>
+                    <li>Móvil 3197339363</li>
+                    <li>Barranquilla - Colombia</li>
+                </ul>
             </div>
-              <a href="https://wa.me/c/573197339363">
-              WhatsApp</a>
-            </a>
-          </li>
-          <li>
-            <p>
-              <div class="logo">
-            <img src="./imgs/facebook.ico">
-            </div>
-            <a href="https://www.facebook.com/EMArchitektonsas/">Facebook</a>
-            </p>
-          </li>
-          <li>
-            <p>
-              <div class="logo">
-            <img src="./imgs/instagram.png">
-            </div>
-            <a href="https://www.instagram.com/emarchitektonsas/"
-            >instagram
-            </a>
-            </p>
-          </li>
-        </ul>
-            </div>
-            <footer>
-                <div class="footer_item">
-                    <figure>
-                        <img class="logo_img" src="./imgs/logo-dark.png" />
-                        <figcaption>
-                            <sub>Arquitectura</sub>
-                            <sub>& planeación</sub>
-                        </figcaption>
-                    </figure>
-                    <aside>
-                        <ul>
-                            <li>arq.eddiemanotas@outlook.com</li>
-                            <li>cel: 319 733 9363</li>
-                            <li>Barraquilla, Colombia</li>
-                        </ul>
-                    </aside>
-                    <div class="footer_item">
-                        <ul>
-                            <li><a href="./index.html">Inicio</a></li>
-                            <li>
-                                <a href="./acerca_de.html"
-                                    >Acerca de Nosotros</a
-                                >
-                            </li>
-                            <li><a href="./servicios.html">Servicios</a></li>
-                            <li><a href="./portafolio.html">Portafolio</a></li>
-                            <li><a href="./contacto.html">Contacto</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <p>Copyright © 2026 EM Architekton | Powered by CloudFlare</p>
-            </footer>
+            <include src="footer.html"></include>
         </div>
-        <script src="./js/init_setup.js"></script>
     </body>
 </html>
