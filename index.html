@@ -1,1 +1,47 @@
-inicio.html
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EM Architekton S.A.S. | Arquitectura y planeación</title>
+        <link href="css/style.css" rel="stylesheet" />
+        <link rel="icon" href="imgs/favico.svg" />
+        <script src="js/waitForElem.js"></script>
+        <script src="js/init_setup.js" defer></script>
+        <script src="js/html_include.js" defer></script>
+    </head>
+    <body style="color: white; background-color: black">
+        <include src="header.html"></include>
+        <aside style="display: none" id="nav_ls">
+            <nav class="nav_bar">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li>
+                        <a href="./acerca_de.html">Acerca de Nosotros</a>
+                    </li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="container" id="main_container">
+            <div class="container">
+                <article>
+                    <h1>EM ARCHITEKTON S.A.S.</h1>
+                    <img
+                        width="600"
+                        height="313"
+                        src="./imgs/pexels-photo.jpg"
+                    />
+                    <p>
+                        Nuestro compromiso es crear bienestar con espacios
+                        funcionales.
+                    </p>
+                    <hr />
+                </article>
+            </div>
+        </div>
+        <include src="footer.html"></include>
+    </body>
+</html>

@@ -14,10 +14,8 @@ let btn_bright = null;
 let btn_dark = null;
 let logos = null;
 
-let dark_mode =
-  "color: white;background-color: black;background-image: url(./imgs/world-dark.svg)";
-let bright_mode =
-  "color: black;background-color: white;background-image: url(./imgs/world-bright.svg)";
+let dark_mode = "color: white;background-color: black";
+let bright_mode = "color: black;background-color: white";
 
 let displayElem = (display, elem) => {
   if (display) {
